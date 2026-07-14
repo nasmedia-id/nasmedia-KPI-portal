@@ -42,7 +42,7 @@
       padding: 22px 0;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       gap: 16px;
     }
 
@@ -54,16 +54,17 @@
       letter-spacing: 0;
     }
 
-    .mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      display: grid;
-      place-items: center;
-      color: white;
-      background: var(--accent);
-      box-shadow: 0 16px 32px rgba(71, 99, 253, .25);
-      font-weight: 950;
+    .logo-card {
+      width: 13rem;
+      height: 4.6rem;
+      border-radius: 1.25rem;
+      background-color: #ffffff;
+      background-image: url('https://nasmedia.id/wp-content/uploads/2021/01/LOGO-INVOICE.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: calc(100% - 1.5rem) auto;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
     }
 
     .brand small {
@@ -98,17 +99,18 @@
 
     main {
       flex: 1;
-      width: min(1120px, calc(100% - 32px));
+      width: min(820px, calc(100% - 32px));
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 380px;
-      gap: 28px;
+      display: flex;
       align-items: center;
+      justify-content: center;
       padding: 36px 0 56px;
     }
 
     .hero {
-      padding: 22px 0;
+      width: 100%;
+      padding: 34px 0;
+      text-align: center;
     }
 
     .eyebrow {
@@ -127,7 +129,9 @@
 
     h1 {
       margin: 18px 0 14px;
-      max-width: 720px;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
       font-size: clamp(44px, 7vw, 76px);
       line-height: .96;
       letter-spacing: 0;
@@ -135,7 +139,7 @@
 
     .lead {
       max-width: 650px;
-      margin: 0;
+      margin: 0 auto;
       color: var(--muted);
       font-size: 18px;
       line-height: 1.7;
@@ -146,6 +150,7 @@
       margin-top: 28px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 12px;
     }
 
@@ -157,7 +162,7 @@
       gap: 10px;
       border: 0;
       border-radius: 12px;
-      padding: 0 20px;
+      padding: 0 26px;
       cursor: pointer;
       font-size: 14px;
       font-weight: 950;
@@ -170,110 +175,6 @@
       color: white;
       background: var(--accent);
       box-shadow: 0 18px 34px rgba(71, 99, 253, .28);
-    }
-
-    .secondary {
-      color: var(--ink);
-      background: rgba(255,255,255,.82);
-      border: 1px solid var(--line);
-    }
-
-    .panel {
-      background: rgba(255, 255, 255, .82);
-      border: 1px solid rgba(226, 232, 240, .9);
-      border-radius: 18px;
-      box-shadow: 0 24px 60px rgba(15, 23, 42, .1);
-      overflow: hidden;
-      backdrop-filter: blur(14px);
-    }
-
-    .panel-head {
-      padding: 20px;
-      border-bottom: 1px solid var(--line);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .panel-title {
-      font-weight: 950;
-      font-size: 16px;
-    }
-
-    .badge {
-      padding: 6px 9px;
-      border-radius: 999px;
-      background: #eef2ff;
-      color: var(--accent);
-      font-size: 11px;
-      font-weight: 950;
-    }
-
-    .menu {
-      padding: 12px;
-      display: grid;
-      gap: 10px;
-    }
-
-    .menu a,
-    .menu button {
-      width: 100%;
-      min-height: 58px;
-      padding: 13px 14px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: var(--paper);
-      color: var(--ink);
-      text-align: left;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      cursor: pointer;
-      font: inherit;
-      transition: border .18s ease, background .18s ease, transform .18s ease;
-    }
-
-    .menu a:hover,
-    .menu button:hover {
-      border-color: rgba(71, 99, 253, .35);
-      background: #f8faff;
-      transform: translateY(-1px);
-    }
-
-    .menu strong {
-      display: block;
-      font-size: 14px;
-      font-weight: 950;
-    }
-
-    .menu span {
-      display: block;
-      margin-top: 3px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .arrow {
-      width: 30px;
-      height: 30px;
-      border-radius: 8px;
-      display: grid;
-      place-items: center;
-      color: var(--accent);
-      background: #eef2ff;
-      flex: 0 0 auto;
-      font-weight: 950;
-    }
-
-    .note {
-      padding: 0 20px 20px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.55;
-      font-weight: 700;
     }
 
     .unset {
@@ -298,7 +199,7 @@
       font-size: 12px;
       font-weight: 800;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       gap: 12px;
       flex-wrap: wrap;
     }
@@ -308,15 +209,7 @@
         align-items: flex-start;
       }
 
-      main {
-        grid-template-columns: 1fr;
-        align-items: start;
-        padding-top: 16px;
-      }
-
-      .panel {
-        max-width: 520px;
-      }
+      main { padding-top: 16px; }
     }
 
     @media (max-width: 520px) {
@@ -331,13 +224,8 @@
   <div class="shell">
     <header class="topbar">
       <a class="brand" href="./" aria-label="PortaDok Nasmedia">
-        <span class="mark">N</span>
-        <span>
-          PortaDok
-          <small>Nasmedia Document Portal</small>
-        </span>
+        <span class="logo-card" aria-hidden="true"></span>
       </a>
-      <span class="status"><span class="dot"></span> Portal aktif</span>
     </header>
 
     <main>
@@ -355,44 +243,8 @@
             Masuk Portal
             <span aria-hidden="true">-></span>
           </a>
-          <button class="btn secondary" type="button" id="copyPortalBtn">
-            Salin Link Portal
-          </button>
         </div>
       </section>
-
-      <aside class="panel" aria-label="Menu akses cepat">
-        <div class="panel-head">
-          <div class="panel-title">Akses Cepat</div>
-          <div class="badge">GitHub Landing</div>
-        </div>
-        <div class="menu">
-          <a id="portalMenuLink" href="#" rel="noopener">
-            <span>
-              <strong>Masuk Portal</strong>
-              <span>Login CS, CSS, admin, dan manajemen</span>
-            </span>
-            <span class="arrow">-></span>
-          </a>
-          <a id="finalDataMenuLink" href="#" rel="noopener">
-            <span>
-              <strong>Finalisasi Data Naskah</strong>
-              <span>Form publik untuk penulis</span>
-            </span>
-            <span class="arrow">-></span>
-          </a>
-          <button type="button" id="openNewTabBtn">
-            <span>
-              <strong>Buka Tab Baru</strong>
-              <span>Gunakan jika browser menahan redirect</span>
-            </span>
-            <span class="arrow">+</span>
-          </button>
-        </div>
-        <div class="note">
-          Halaman GitHub ini hanya pintu masuk. Proses utama tetap dijalankan dari Apps Script supaya fitur database dan token berjalan normal.
-        </div>
-      </aside>
     </main>
 
     <footer>
@@ -408,13 +260,8 @@
 
     const portalUrl = String(APPS_SCRIPT_URL || '').trim();
     const isConfigured = /^https:\/\/script\.google\.com\/(?:macros\/s|a\/macros\/[^/]+\/s)\/[^/]+\/exec/i.test(portalUrl);
-    const finalDataUrl = isConfigured ? portalUrl + '?api=final-data' : '#';
 
     const mainPortalBtn = document.getElementById('mainPortalBtn');
-    const portalMenuLink = document.getElementById('portalMenuLink');
-    const finalDataMenuLink = document.getElementById('finalDataMenuLink');
-    const openNewTabBtn = document.getElementById('openNewTabBtn');
-    const copyPortalBtn = document.getElementById('copyPortalBtn');
     const warning = document.getElementById('urlWarning');
     const yearText = document.getElementById('yearText');
 
@@ -433,51 +280,11 @@
       if (warning) warning.style.display = 'block';
     }
 
-    function manualCopy(value) {
-      const box = document.createElement('textarea');
-      box.value = value;
-      box.setAttribute('readonly', '');
-      box.style.position = 'fixed';
-      box.style.left = '-9999px';
-      document.body.appendChild(box);
-      box.select();
-      let copied = false;
-      try { copied = document.execCommand('copy'); } catch (error) {}
-      box.remove();
-      return copied;
-    }
-
-    async function copyText(value) {
-      if (!value || !isConfigured) {
-        showUrlWarning();
-        return;
-      }
-      try {
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          await navigator.clipboard.writeText(value);
-        } else if (!manualCopy(value)) {
-          throw new Error('manual-copy-failed');
-        }
-        copyPortalBtn.textContent = 'Link Tersalin';
-        setTimeout(function () { copyPortalBtn.textContent = 'Salin Link Portal'; }, 1800);
-      } catch (error) {
-        window.prompt('Salin link portal:', value);
-      }
-    }
-
     if (isConfigured) {
       if (mainPortalBtn) mainPortalBtn.href = portalUrl;
-      if (portalMenuLink) portalMenuLink.href = portalUrl;
-      if (finalDataMenuLink) finalDataMenuLink.href = finalDataUrl;
-      if (openNewTabBtn) openNewTabBtn.addEventListener('click', function () { window.open(portalUrl, '_blank', 'noopener'); });
-      if (copyPortalBtn) copyPortalBtn.addEventListener('click', function () { copyText(portalUrl); });
     } else {
       showUrlWarning();
       setDisabledLink(mainPortalBtn);
-      setDisabledLink(portalMenuLink);
-      setDisabledLink(finalDataMenuLink);
-      if (openNewTabBtn) openNewTabBtn.addEventListener('click', showUrlWarning);
-      if (copyPortalBtn) copyPortalBtn.addEventListener('click', showUrlWarning);
     }
   </script>
 </body>
